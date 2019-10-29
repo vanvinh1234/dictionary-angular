@@ -1,5 +1,9 @@
-<h2>English-Vietnamese Dictionary</h2>
-<input type="text" (change)="search($event.target.value)">
-<p *ngIf="word">
-Nghĩa của từ là: {{word.key}}: {{word.meaning}}
-</p>
+<h2 class="text-center">English-Vietnamese Dictionary</h2>
+<div class="col-md-4 offset-md-4">
+  <input class="form-control" type="text" (change)="search($event.target.value)">
+  <div class="mt-4">
+    <p *ngIf="word" class="alert alert-success">
+      Nghĩa của từ {{word.key}} là: {{word.meaning}}
+    </p>
+  </div>
+</div>

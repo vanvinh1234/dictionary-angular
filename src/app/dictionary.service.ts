@@ -41,5 +41,8 @@ export class DictionaryService {
     }
     return 'Not Found';
   }
+  getAll(): IWord[] {
+    return this.words;
+  }
 
 }
